@@ -16,7 +16,7 @@ run app name port: (build app name)
 		-it \
 		-d \
 		--name {{app}}-{{name}} \
-		-p {{port}}:80 {{app}}:{{name}}
+		-p {{port}}:8000 {{app}}:{{name}}
 	podman image prune -f
 
 # stop the latest container
