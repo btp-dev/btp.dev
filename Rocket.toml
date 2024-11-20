@@ -1,11 +1,12 @@
 [default]
-address = "0.0.0.0"
 limits = {form = "64 kB", json = "1 MiB"}
 
 [debug]
+address = "127.0.0.1"
 port = 8080
 limits = { json = "10 MiB" }
 
 [release]
+address = "0.0.0.0"
 port = 443
 ip_header = false
